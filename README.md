@@ -30,7 +30,7 @@ It should be possible to bypass instapaper and just have a list of URLs but the 
 
 ## Known issues
 
-The table of contents is good in HTML but doesn´t always work well in the PDF. 
+The table of contents is good in HTML but doesn't always work well in the PDF. 
 
 ## Acknowledgements
 
