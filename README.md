@@ -20,7 +20,7 @@ It should be possible to bypass instapaper and just have a list of URLs but the 
 
 ## Usage
 
-- Install Python 3.9 via Anaconda
+- Install Python 3.9 via [Anaconda](https://www.anaconda.com/products/individual)
 - Recreate the environment: `conda env create --file environment.yaml`
 - Create an `.env` file with your Instapaper username and password - see [.env.template](./.env.template)
 - Run the script: `python instapaper2pdf.py`
@@ -29,3 +29,14 @@ It should be possible to bypass instapaper and just have a list of URLs but the 
 ## Known issues
 
 The table of contents is good in HTML but doesn´t always work well in the PDF. 
+
+## Acknowledgements
+
+Many thanks to the maintainers of the open source libraries this depends on, especially:
+
+- [`pdfkit`](https://github.com/JazzCore/python-pdfkit)
+- [`qrcode`](https://github.com/lincolnloop/python-qrcode)
+- [`requests`](https://docs.python-requests.org/en/master/index.html)
+- [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)
+
+Take a look at [environment.yml](./environment.yml) for all the dependencies
