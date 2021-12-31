@@ -6,7 +6,7 @@ This is a simple single script to read some recent articles from [Instapaper](ht
 
 It should be possible to bypass instapaper and just have a list of URLs but the text cleaning Instapaper does is nice plus the target workflow is:
 
-- log articles in Instapaper
+- Log articles in Instapaper
 - Periodically generate PDF
 - Read at leisure on Remarkable
 
