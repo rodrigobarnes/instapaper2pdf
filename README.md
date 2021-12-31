@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a simple single script to read some recent articles from [Instapaper](https://www.instapaper.com) and convert them into a reasonably structured ad layed out PDF for use in a [Remarkable](https://remarkable.com/) device (or similar)
+This is a simple single script to read some recent articles from [Instapaper](https://www.instapaper.com) and convert them into a reasonably structured and layed out PDF for use in a [Remarkable](https://remarkable.com/) device (or similar)
 
 It should be possible to bypass instapaper and just have a list of URLs but the text cleaning Instapaper does is nice plus the target workflow is:
 
