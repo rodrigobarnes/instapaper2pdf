@@ -20,13 +20,29 @@ It should be possible to bypass instapaper and just have a list of URLs but the 
 
 ## Usage
 
-- Install Python 3.9 via [Anaconda](https://www.anaconda.com/products/individual)
-- Recreate the environment: `conda env create --file environment.yaml`
-- Activate the envoronment: `conda activate instapaper2pdf`
+- Install Python 3.9 or later
+
+- create a new Python virtual environment:
+```sh
+python -m venv .venv
+```
+- Install dependencies in that environment:
+```sh
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
 - Create an `.env` file with your Instapaper username and password - see [.env.template](./.env.template)
-- Add the credentials to the environment e.g. `source .env`
-- Run the script: `python instapaper2pdf.py`
+- Add the credentials to the environment:
+```sh
+source .env
+```
+- Run the script: 
+```sh
+python instapaper2pdf.py
+```
 - Output is logged to the console or to `instapaper2pdf.log`
+- Output is in the `output` folder
 
 ## Known issues
 
