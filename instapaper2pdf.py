@@ -99,7 +99,11 @@ pdfkit_options = {
     'encoding': 'UTF-8',
     'javascript-delay': '9000',
     'no-stop-slow-scripts': '',
-    'zoom': 1.5
+    'zoom': 1.5,
+    'page-size': 'A4',
+    'load-error-handling': 'ignore',
+    'load-media-error-handling': 'ignore',
+    'print-media-type': None
 }
 
 # -----------------------------------------------------------------------------
@@ -170,12 +174,15 @@ with requests.session() as s:
                 qrcode_datablock = f'data:image/png;base64,{qrcode_encoded}'
                 # print(qrcode_datablock)
 
+        # Remove iframes, usually video embeds
+        if article_soup.iframe:
+            article_soup.iframe.extract()
         # Get the body of the article - the 'story'
         main = article_soup.find_all('div', class_='story')
         if len(main) > 0:
             # the extracted body
             article_body = '\n'.join(map(lambda d: str(d), main[0].contents))
-
+           
             article_heading = f"""
 <!-- Start: {article_id} -->
 <div id="{article_id}" class="article">
