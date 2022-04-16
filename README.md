@@ -57,4 +57,4 @@ Many thanks to the maintainers of the open source libraries this depends on, esp
 - [`requests`](https://docs.python-requests.org/en/master/index.html)
 - [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)
 
-Take a look at [environment.yml](./environment.yml) for all the dependencies
+Take a look at [requirements.txt](./requirements.txt) for all the dependencies
