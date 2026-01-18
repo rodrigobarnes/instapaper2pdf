@@ -1,0 +1,24 @@
+[project]
+name = "instapaper2pdf"
+version = "0.1.0"
+description = "Convert Instapaper articles to PDF"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "beautifulsoup4",
+    "certifi",
+    "charset-normalizer",
+    "idna",
+    "pillow",
+    "qrcode",
+    "requests",
+    "soupsieve",
+    "urllib3",
+    "loguru",
+    "python-dotenv",
+    "playwright>=1.48.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

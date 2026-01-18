@@ -1,7 +1,4 @@
 #!/bin/bash
-# Python environment
-source .venv/bin/activate
-# Credentials for instapaper
-source .env
-# Create the pdf
-python instapaper2pdf.py
+# Create the pdf using uv
+# Environment variables are loaded from .env by python-dotenv
+uv run instapaper2pdf.py 50
